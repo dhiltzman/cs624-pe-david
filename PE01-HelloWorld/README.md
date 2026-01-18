@@ -1,50 +1,43 @@
-# Welcome to your Expo app 👋
+# CS624 Full-Stack Development - Mobile App
+# Term: Winter 2026
+# Author: David Hiltzman
+# Assignment: PE01 - Hello World
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
+This React Native mobile application displays personalized information including the developer's name, degree program, and school. The app demonstrates fundamental React Native components and styling while following the input-process-output (IPO) model used in systems analysis and software engineering.
 
-## Get started
+## Input
+This application does not require user input. The input consists of hardcoded data values defined within the application's source code:
+- Developer's name (string)
+- Degree program (string)
+- School name (string)
 
-1. Install dependencies
+These static values are embedded directly into the component structure and serve as the data source for the application.
 
-   ```bash
-   npm install
-   ```
+## Process
+The React Native framework processes the input data by:
+1. Initializing the application component structure using one View component
+2. Organizing three Text components to display each piece of information
+3. Applying StyleSheet styling to set the yellow background color
+4. Rendering the component hierarchy to create the mobile app interface
 
-2. Start the app
+The processing occurs automatically when the app launches, with React Native's rendering engine converting the component declarations into native mobile UI elements.
 
-   ```bash
-   npx expo start
-   ```
+## Output
+The application displays three lines of text on a yellow background:
+- Line 1: Developer's name
+- Line 2: Degree program
+- Line 3: School name
 
-In the output, you'll find options to open the app in a
+The visual output is rendered to the mobile device screen using React Native's native rendering capabilities, creating a simple but functional mobile application interface.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Technology Stack
+- **Framework:** React Native
+- **Development Environment:** GitHub Codespaces
+- **Runtime:** Expo
+- **Components Used:** View (1), Text (3), StyleSheet (1)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## References
+1. React Native Documentation - https://reactnative.dev/
+2. Expo Documentation - https://docs.expo.dev/
+3. GitHub Codespaces - https://docs.github.com/en/codespaces
