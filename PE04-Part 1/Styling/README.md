@@ -34,7 +34,7 @@ End
 
 ## Output
 
-![Profile Card Component](1771463885160_image.png)
+![Profile Card Component](./assets/images/Selection_027.png)
 
 *Figure 1: Finished Profile Card — avatar, name, occupation with underline, and biography on a blue card.*
 
