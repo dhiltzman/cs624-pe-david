@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
+# CS624 Full-Stack Development - Mobile App
+**Term:** Winter 2026 | **Author:** David Hiltzman | **Assignment:** PE04
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
 
-## Get started
+The IPO (Input–Process–Output) model describes how a program receives inputs, performs computations, and returns results. It divides work into three categories: a requirement from the environment (input), a computation (process), and a result provided back (output).
 
-1. Install dependencies
+## Profile Card Styling App
 
-   ```bash
-   npm install
-   ```
+Built on the HOS05 Styling app, this React Native component displays a styled profile card with a user avatar, name, occupation, and biography, following Section 4.3 "Styling Text Components" from *React Native in Action*.
 
-2. Start the app
+| Step | Description |
+|------|-------------|
+| **Input** | Static profile data: name, occupation, and bio text |
+| **Process** | StyleSheet styles applied to each Text and View element |
+| **Output** | Rendered Profile Card displayed on screen |
 
-   ```bash
-   npx expo start
-   ```
+## Pseudocode
 
-In the output, you'll find options to open the app in a
+```
+Function ProfileCard
+    Declare String name       = "John Doe"
+    Declare String occupation = "React Native Developer"
+    Declare String bio        = "John is a really great JavaScript developer..."
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+    Output cardContainer
+        Output avatar image
+        Output name (bold, white, shadow)
+        Output occupation (bold, underline border)
+        Output bio (italic)
+    End
+End
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Output
 
-## Learn more
+![Profile Card Component](1771463885160_image.png)
 
-To learn more about developing your project with Expo, look at the following resources:
+*Figure 1: Finished Profile Card — avatar, name, occupation with underline, and biography on a blue card.*
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## References
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Dabit, N. (2019). *React Native in Action*. Manning Publications. ISBN 9781617294051.
+2. React Native Documentation. (n.d.). Style. https://reactnative.dev/docs/style
